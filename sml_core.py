@@ -31,8 +31,10 @@ class sml_core:
 		self.chk(pth)
 		self.data[f'{pth}._data'] = dat
 
+	# Simple api only for test
 	def ls(self, pth):
 		if not pth[0] == '.': 
 			pth = '.'+pth
 		self.chk(pth)
 		print(self.data[f'{pth}._chld'])
+
